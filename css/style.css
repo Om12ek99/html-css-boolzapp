@@ -66,7 +66,7 @@
     height: 50px;
 }
 
-
+/* icone a destra */
 .header .headleft .info {
     padding: 10px;
     width: fit-content;
@@ -80,4 +80,91 @@
     color: gray;
 }
 
+/*Main Body*/
+.mainbody {
+    height: 85%;
+    width:auto;
+   align-items: center;
+   justify-content: center; 
+}
+.messagebox {
+    width: 90%;
+    height: 90%;
+    flex-direction: column;
+    gap: 10px;
+    /*debug*/
+    border: 1px solid rgb(56, 17, 228);
+}
+.messagebox .row {
+    height: fit-content;
+    width: 100%;
+    flex-direction: row;
+}
 
+.messagebox .row .message {
+    width: 60%;
+
+    padding: 20px;
+    border-radius: 20px;
+}
+.messagebox .row .green {
+    background-color: #D5F9BA;
+}
+.messagebox .row .white {
+    background-color: white;
+}
+
+.sent{
+    justify-content: right;
+
+}
+.received {
+    justify-content: left;
+}
+.text {
+    width: 95%;
+}
+.chevronmenu {
+   width: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    /* header responsive */
+    .headright {
+        display: none;
+    }
+
+    /* first column responsive */
+    .container .column:first-child {
+        display: none;
+    }
+    .container .column:last-child {
+        width: 100%;
+        height: auto;
+}
