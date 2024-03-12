@@ -44,11 +44,12 @@
 
 /*COLONNA 2*/
 .container .column:last-child .header {
-    height: 8%;
+    height: 10%;
     width: 100%;
     /*debug*/
-    border: 1px solid rgb(56, 17, 228);
+    /* border: 1px solid rgb(56, 17, 228); */
     justify-content: space-between;
+    background-color: #EAEAEA;
 }
 
 .header .headright {
@@ -58,7 +59,12 @@
     align-items: center;
     gap: 10px;
     /*debug*/
-    border: 1px solid rgb(56, 17, 228);
+    /* border: 1px solid rgb(56, 17, 228); */
+}
+
+.header .headleft {
+    justify-content: center;
+    align-items: center; 
 }
 
 .header .headleft img {    
@@ -82,10 +88,12 @@
 
 /*Main Body*/
 .mainbody {
-    height: 85%;
+    height: 84%;
     width:auto;
    align-items: center;
    justify-content: center; 
+   background-image: url(../img/mine.jpg);
+
 }
 .messagebox {
     width: 90%;
@@ -93,7 +101,7 @@
     flex-direction: column;
     gap: 10px;
     /*debug*/
-    border: 1px solid rgb(56, 17, 228);
+    /* border: 1px solid rgb(56, 17, 228); */
 }
 .messagebox .row {
     height: fit-content;
@@ -126,6 +134,28 @@
 }
 .chevronmenu {
    width: 5%;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 6%;
+    background-color: #F3EEEA;
+}
+.footer .emoji, .audio {
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+    /*debug*/
+    /* border: 1px solid black; */
+}
+
+.footer .textsection {
+    width: 90%;
+}
+.footer .textsection .text {
+    width: 100%;
+    height: 100%;
 }
 
 
